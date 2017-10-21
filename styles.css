@@ -1,0 +1,72 @@
+body {
+    background-color: burlywood;
+    margin: 1px;
+}
+
+
+#grid{
+    grid-area: two;
+    display: grid;
+    grid-template-areas: "a b" "c d";
+    grid-template-rows:    250px 1fr;
+    grid-template-columns: 8fr 2fr;
+    height: 100vh;
+    grid-gap: 1px;
+    margin-top: 2px;
+}
+
+#mainMenu{
+    grid-area: one;
+    background-color: black;
+    display: flex;
+    align-content: space-around;
+    height: 40px;
+}
+
+.menuButton{
+    background-color: chocolate;
+    text-align: center;
+    font-size: 26px;
+    width: 50%;
+    border: medium #2e240d solid;
+}
+
+.menuButton:hover{
+    background-color: cadetblue;
+    text-align: center;
+}
+
+#canvas{
+    grid-area: a;
+    background-color: burlywood;
+}
+
+#canvas1{
+    background-color: black;
+}
+
+#canvas2{
+    horiz-align: middle;
+    background-color: black;
+}
+
+#pitchesTable{
+    grid-area: c;
+    background-color: darkorange;
+}
+
+#settings{
+    grid-area: d;
+    background-color: wheat;
+}
+
+#pitchCanvas{
+    grid-area: b;
+    background-color: chocolate;
+}
+
+#about{
+    grid-area: two;
+height: 100vh;
+    background-color: brown;
+}
